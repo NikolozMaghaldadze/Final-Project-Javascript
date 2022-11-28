@@ -5,13 +5,14 @@ let body = document.querySelector('body'),
     modeSwitch = body.querySelector('.toggle-switch'),
     modeText = body.querySelector('.mode-text'),
     leftSide = body.querySelector('.left-side');
+    rightSide = body.querySelector(".right-side");
 
     toggle.addEventListener('click' , function(){
         sidebar.classList.toggle("close");
     });
 
     searchBtn.addEventListener("click" , function(){
-        sidebar.classList.remove("close")
+        sidebar.classList.remove("close");
     });
 
     modeSwitch.addEventListener('click' , function(){
@@ -27,6 +28,27 @@ let body = document.querySelector('body'),
     modeSwitch.addEventListener('click' , function(){
         leftSide.classList.toggle('darkness');
     });
+    modeSwitch.addEventListener('click' , function(){
+        rightSide.classList.toggle('darkness');
+    });
 
+    window.addEventListener("resize", function() {
+        let w = window.innerWidth;{
 
-    
+            if (w <1020) {
+                sidebar.classList.add("close")
+            }else{
+                sidebar.classList.remove("close")
+            }
+        } 
+    })
+
+    function disableClick(){
+        let sidebar = document.querySelector(".sidebar")
+        let w = window.innerWidth;
+
+        if( w < 1020){
+            sidebar.preventDefault()
+            sidebar.stopPropagation()
+        }
+    }
