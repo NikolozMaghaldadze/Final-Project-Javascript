@@ -1,116 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project Javascript</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;0,900;1,700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-<body>
-    <nav class="sidebar">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="images/logo.png" alt="logo-image">
-                </span>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;0,900;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="images/logo.png" alt="logo-image" />
+          </span>
 
-                <div class="text header-text">
-                    <span class="name">Fitness Club</span>
-                </div>
-            </div>
-
-            <i class="fa-solid fa-angles-right toggle"></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-                <div class="search">
-                    <li class="search-box">
-                        <a href="#">
-                            <i class="fa-solid fa-magnifying-glass icon"></i>
-                            <input type="text" placeholder="Search...">
-                        </a>
-                    </li>
-                </div>
-
-                <div class="ul">
-                    <ul class="menu-links">
-                        <li class="nav-links">
-                            <a href="#">
-                                <i class="fa-solid fa-house-chimney icon"></i>
-                                <span class="text nav-text">Home</span>
-                            </a>
-                        </li>
-    
-                        <li class="nav-links">
-                            <a href="#">
-                                <i class="fa-solid fa-users icon"></i>
-                                <span class="text nav-text">About us</span>
-                            </a>
-                        </li>
-    
-                        <li class="nav-links">
-                            <a href="#">
-                                <i class="fa-solid fa-dumbbell icon"></i>
-                                <span class="text nav-text">Classes</span>
-                            </a>
-                        </li>
-    
-                        <li class="nav-links">
-                            <a href="#">
-                                <i class="fa-solid fa-bell icon"></i>
-                                <span class="text nav-text">News</span>
-                            </a>
-                        </li>
-    
-                        <li class="nav-links">
-                            <a href="#">
-                                <i class="fa-solid fa-paper-plane icon"></i>
-                                <span class="text nav-text">Contact</span>
-                            </a>
-                        </li>
-    
-                        <li class="nav-links">
-                            <a href="#">
-                                <i class="fa-solid fa-pen-clip icon"></i>
-                                <span class="text nav-text">Registration</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bottom-content">
-                    <li class="">
-                        <a href="#">
-                            <i class="fa-solid fa-door-open icon"></i>
-                            <span class="text nav-text">Log out</span>
-                        </a>
-                    </li>
-
-                    <li class="mode">
-                        <div class="moon-sun">
-                            <i class="fa-solid fa-moon icon moon"></i>
-                            <i class="fa-solid fa-sun icon sun"></i>
-                        </div>
-
-                        <span class="mode-text text">Dark mode</span>
-
-                        <div class="toggle-switch">
-                            <span class="switch"></span>
-                        </div>
-                    </li>
-                </div>
-            </div>
+          <div class="text header-text">
+            <span class="name">Fitness Club</span>
+          </div>
         </div>
+
+        <i class="fa-solid fa-angles-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <div class="search">
+            <li class="search-box">
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input type="text" placeholder="Search..." />
+              </a>
+            </li>
+          </div>
+
+          <div class="ul">
+            <ul class="menu-links">
+              <li class="nav-links">
+                <a href="#">
+                  <i class="fa-solid fa-house-chimney icon"></i>
+                  <span class="text nav-text">Home</span>
+                </a>
+              </li>
+
+              <li class="nav-links">
+                <a href="#">
+                  <i class="fa-solid fa-users icon"></i>
+                  <span class="text nav-text">About us</span>
+                </a>
+              </li>
+
+              <li class="nav-links">
+                <a href="#">
+                  <i class="fa-solid fa-dumbbell icon"></i>
+                  <span class="text nav-text">Classes</span>
+                </a>
+              </li>
+
+              <li class="nav-links">
+                <a href="#">
+                  <i class="fa-solid fa-bell icon"></i>
+                  <span class="text nav-text">News</span>
+                </a>
+              </li>
+
+              <li class="nav-links">
+                <a href="#">
+                  <i class="fa-solid fa-paper-plane icon"></i>
+                  <span class="text nav-text">Contact</span>
+                </a>
+              </li>
+
+              <li class="nav-links">
+                <a href="#">
+                  <i class="fa-solid fa-pen-clip icon"></i>
+                  <span class="text nav-text">Registration</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottom-content">
+            <li class="">
+              <a href="#">
+                <i class="fa-solid fa-door-open icon"></i>
+                <span class="text nav-text">Log out</span>
+              </a>
+            </li>
+
+            <li class="mode">
+              <div class="moon-sun">
+                <i class="fa-solid fa-moon icon moon"></i>
+                <i class="fa-solid fa-sun icon sun"></i>
+              </div>
+
+              <span class="mode-text text">Dark mode</span>
+
+              <div class="toggle-switch">
+                <span class="switch"></span>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
     </nav>
 
+    <section class="section1">
+      <div class="wrapper-first-page">
+        <p class="small-font-description">
+          Practice Hard, Play Strong, Pain Is Glory.
+        </p>
+        <p class="big-font-description">
+          Solutions For Moving Better And Feeling Healthier.
+        </p>
+        <div class="button">
+          <a href="#">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="information-text">
+        <p class="top-text">ABOUT US</p>
+        <h3 class="header-section">Welcome to Bestrong</h3>
+        <hr size="4" width="238px" color="#3591e7" />
+
+        <p class="info-1">
+          From the moment you walk through the door you know Gym base is a
+          unique place
+        </p>
+
+        <p class="huge-info">
+          If you run a fitness gym, this is one slogan that can bring customers
+          in. No one likes having to drive miles out of their way to go to the
+          gym. It is always easier to have a gym that is actually close to home.
+          Your body hears everything that your mind says.
+        </p>
+
+        <div class="button-2">
+            <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="images-wrapper">
+        <div class="left-side">
+          <img class="gym" src="images/cbum.png" alt="Gym" />
+          <img class="darkmode" src="images/cbumDark.jpg" alt="dark">
+        </div>
+
+        <div class="right-side">
+          <img class="gym" src="images/david.png" alt="Gym" />
+          <img class="gym" src="images/fitWoman.png" alt="Gym" />
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

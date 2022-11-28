@@ -1,0 +1,69 @@
+@media (max-width:830px){
+    .wrapper-first-page{
+        padding-left: 110px;
+        padding-top: 300px;
+    }
+    
+    .small-font-description{
+    font-size: 20px;
+    }
+    
+    .big-font-description{
+        font-size: 35px;
+    }
+
+    .button{
+    font-size: 20px;
+    }
+}
+
+@media (max-width:710px){
+    .wrapper-first-page{
+        padding-left: 0px;
+        padding-top: 300px;
+    }
+    .section1{
+        background-image:url(images/girl-resting-after-exercises-gym_152625-820_auto_x2_auto_x2.png) ;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-color: #000;
+        width: 100%;
+        height: 945px;
+        padding-left: 150px;
+    }
+    .small-font-description{
+        font-size: 15px;
+        }
+        
+        .big-font-description{
+            font-size: 25px;
+        }
+    
+        .button{
+        font-size: 15px;
+        }
+    }
+    .button{
+        width: 241px;
+        height: 53px;   
+    }
+
+@media (max-width:710px){
+
+    .section1{
+        background-image:url(images/girl-resting-after-exercises-gym_152625-820_auto_x2_auto_x2.png) ;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-color: #000;
+        width: 100%;
+        height: 945px;
+        padding-left: 90px;
+    }
+}
+@media(max-width:510px){
+
+    .button{
+        width: 171px;
+        height: 37px;   
+    }
+}

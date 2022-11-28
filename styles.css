@@ -75,6 +75,14 @@ body.dark .name{
     width: 88px;
 }
 
+.sidebar.close .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 .sidebar.close .text{
     opacity: 1;
 }
@@ -85,7 +93,8 @@ body.dark .name{
 }
 
 .sidebar.close .image-text img{
-    display: none;
+    width:60px ;
+    height: 20px;
 }
 
 .sidebar.close .name{
@@ -99,6 +108,14 @@ body.dark .name{
 
 .sidebar header .image-text{
     display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.sidebar.close header .image-text{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 6px;
 
@@ -118,6 +135,7 @@ body.dark .name{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: var(--tran-03);
 }
 
 .sidebar.close header .toggle{
@@ -183,6 +201,7 @@ body.dark .name{
 
 .sidebar.close input{
     display: none;
+    transition: var(--tran-05);
 }
 
 .search-box input:hover{
@@ -225,11 +244,12 @@ body.dark .name{
 } 
 .sidebar.close .menu-links span{
     display: none;
-    transition: var(--tran-03);
+    transition: var(--tran-05);
 }
 
 .menu-bar .mode{
     background: var(--primary-color-light);
+    border-radius: 6px;
 }
 
 
@@ -241,7 +261,7 @@ body.dark .name{
 }
 
 .bottom-content{
-    margin-top: 400px;
+    margin-top: 360px;
 }
 
 .menu-bar .mode i {
@@ -263,6 +283,7 @@ body.dark .menu-bar .mode .moon{
 
 .sidebar.close .text.nav-text{
 display: none;
+transition: var(--tran-05);
 }
 
 
@@ -316,3 +337,246 @@ body.dark .switch::before{
     display: none;
     transition: var(--tran-03);
 }
+/* end of header elements */
+
+
+/* start of first section */
+
+.section1{
+    background-image:url(images/girl-resting-after-exercises-gym_152625-820_auto_x2_auto_x2.png) ;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    width: 100%;
+    height: 933px;
+    padding-left: 250px;
+}
+
+body.dark .section1{
+    background-image: url(images/GymGirlDark.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    width: 100%;
+    height: 933px;
+    padding-left: 250px;
+    transition: var(--tran-03);
+}
+
+.wrapper-first-page{
+    padding-left: 130px;
+    padding-top: 300px;
+}
+
+.small-font-description{
+font-size: 25px;
+font-weight: 400;
+font-family:'Poppins', sans-serif;
+color: #FFF;
+margin-bottom: 20px;
+}
+
+.big-font-description{
+    font-size: 45px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    color: #FFF;
+    max-width: 813px;
+    width: 100%;
+    height: 145px;
+}
+
+body.dark .big-font-description{
+    color: var(--text-color);
+}
+
+body.dark .small-font-description{
+    color: var(--text-color);
+}
+
+.button a{
+    color: #000;
+}
+
+.button{
+width: 301px;
+height: 93px;
+background-color: #00A2FF;
+font-size: 25px;
+font-weight: 400;
+font-family:'Poppins', sans-serif;
+text-decoration: none;
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+}
+
+.button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: #3591e7 0px 5px 15px;
+    transition: var(--tran-03);
+}
+body.dark .button:hover{
+    box-shadow:  var(--primary-color-light) 0px 5px 15px;
+}
+
+body.dark .button a{
+    color: #FFF;
+}
+
+body.dark .button{
+    background-color: #3A3B3C;
+    color: #FFF;
+}
+/* end of first section */
+
+/* start of second section */
+
+.section2{
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.information-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 670px;
+    width: 100%;
+    height: 674px;
+}
+
+hr{
+    margin: 0;
+}
+
+.images-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 20px;
+    max-width: 821px;
+    width: 100%;
+    height: 930px;
+}
+.gym{
+    max-width:380px ;
+    width: 100%;
+    height:420px ;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+}
+.darkmode{
+    display: none;
+}
+.left-side.darkness .gym{
+    display: none;
+    max-width:380px ;
+    width: 100%;
+    height:420px ;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+    transition: var(--tran-03);
+}
+
+.left-side{
+    max-width: 380px;
+    width: 100%;
+    height: 930px;
+    display: flex;
+    align-items: center;
+}
+
+.left-side.darkness .darkmode{
+    display: inline-block;
+    max-width:380px ;
+    width: 100%;
+    height:420px ;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+    transition: var(--tran-03);
+}
+.right-side{
+    max-width: 380px;
+    width: 100%;
+    height: 930px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.top-text{
+    font-size: 15px;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+    color:var(--primary-color);
+}
+
+.header-section{
+    font-size: 55px;
+    font-weight: 500;
+    font-family:'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.info-1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+    color:var(--primary-color);
+    margin-top: 60px;
+}
+
+.huge-info{
+    font-size: 30px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    margin-top: 60px;
+}
+
+.button-2{
+max-width: 201px;
+width: 100%;
+height: 53px;
+background-color: #00A2FF;
+font-size: 25px;
+font-weight: 400;
+font-family:'Poppins', sans-serif;
+text-decoration: none;
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+margin-top: 90px;
+}
+
+.button-2:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: #3591e7 0px 5px 15px;
+    transition: var(--tran-03);
+}
+
+body.dark .button-2:hover{
+    box-shadow: var(--primary-color-light) 0px 5px 15px;
+}
+
+body.dark .button-2 a{
+    color: #FFF;
+}
+
+body.dark .button-2{
+    background-color: #3A3B3C;
+    color: #FFF;
+}
+/* end of second section */

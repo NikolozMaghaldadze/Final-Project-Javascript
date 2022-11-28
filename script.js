@@ -3,7 +3,8 @@ let body = document.querySelector('body'),
     toggle = body.querySelector('.toggle'),
     searchBtn = body.querySelector('.search-box'),
     modeSwitch = body.querySelector('.toggle-switch'),
-    modeText = body.querySelector('.mode-text');
+    modeText = body.querySelector('.mode-text'),
+    leftSide = body.querySelector('.left-side');
 
     toggle.addEventListener('click' , function(){
         sidebar.classList.toggle("close");
@@ -20,7 +21,12 @@ let body = document.querySelector('body'),
             modeText.innerText = "Light Mode"
         } else {
             modeText.innerText = "Dark Mode"
-        }
+        };
     });
+
+    modeSwitch.addEventListener('click' , function(){
+        leftSide.classList.toggle('darkness');
+    });
+
 
     
