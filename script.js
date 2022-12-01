@@ -9,6 +9,11 @@ let body = document.querySelector('body'),
 
     toggle.addEventListener('click' , function(){
         sidebar.classList.toggle("close");
+        let w = window.innerWidth;
+        if (w < 1020) {
+            toggle.stopPropagation;
+            toggle.preventdefault
+        }
     });
 
     searchBtn.addEventListener("click" , function(){
@@ -42,13 +47,3 @@ let body = document.querySelector('body'),
             }
         } 
     })
-
-    function disableClick(){
-        let sidebar = document.querySelector(".sidebar")
-        let w = window.innerWidth;
-
-        if( w < 1020){
-            sidebar.preventDefault()
-            sidebar.stopPropagation()
-        }
-    }
