@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* Variables */
 :root{
@@ -261,7 +264,10 @@ body.dark .name{
 }
 
 .bottom-content{
-    margin-top: 360px;
+    margin-top: 450px;
+}
+.sidebar.close .bottom-content{
+    margin-top: 420px;
 }
 
 .menu-bar .mode i {
@@ -363,6 +369,11 @@ body.dark .section1{
     transition: var(--tran-03);
 }
 
+body.changes .section1{
+    padding-left: 0;
+    transition: var(--tran-02);
+}
+
 .wrapper-first-page{
     padding-left: 130px;
     padding-top: 300px;
@@ -445,6 +456,12 @@ body.dark .button{
     justify-content: flex-end;
     padding-right: 75px;
     height: auto;
+    transition: var(--tran-03);
+}
+
+body.changes .section2{
+    justify-content: center;
+    transition: var(--tran-03);
 }
 
 
@@ -648,6 +665,11 @@ body.dark .huge-info{
     padding-bottom: 3px;
 }
 
+body.changes .section-3{
+    padding-left: 100px;
+    transition: var(--tran-05);
+}
+
 body.dark .section-3{
     transition: var(--tran-03);
     background-color: #000;
@@ -760,3 +782,28 @@ body.dark .grid-block .image-1{
 }
 
 /* End of third section */
+
+/* start of registration form */
+
+.registracia-full{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/mountains.png);
+    object-fit: cover;
+}
+.mtliani-wrapperi{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.from-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    height: 1000px;
+    z-index: 3;
+    opacity: 1;
+}
+
+
+/* end of registration form */

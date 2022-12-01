@@ -9,12 +9,11 @@ let body = document.querySelector('body'),
 
     toggle.addEventListener('click' , function(){
         sidebar.classList.toggle("close");
-        let w = window.innerWidth;
-        if (w < 1020) {
-            toggle.stopPropagation;
-            toggle.preventdefault
-        }
     });
+
+    toggle.addEventListener("click" , function(){
+        body.classList.toggle("changes")
+    })
 
     searchBtn.addEventListener("click" , function(){
         sidebar.classList.remove("close");
@@ -45,5 +44,22 @@ let body = document.querySelector('body'),
             }else{
                 sidebar.classList.remove("close")
             }
+
         } 
-    })
+    });
+
+    window.addEventListener("resize", function(){
+            if (sidebar.classList === "close") {
+                body.classList.add('changes')
+            }else{
+                body.classList.remove('changes')
+            }
+        });
+
+
+    // registration form start
+
+
+
+    // registration form end
+
