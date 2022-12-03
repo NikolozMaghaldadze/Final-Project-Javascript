@@ -7,6 +7,7 @@
     <title>Registration form</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;0,900;1,700&family=Roboto&display=swap"
       rel="stylesheet"
@@ -21,44 +22,72 @@
       <div class="mtliani-wrapperi">
         <div class="from-wrapper">
           <div class="two-items">
-            <button type="button" class="toggle-button">Log In</button>
             <button type="button" class="toggle-button">Registration</button>
           </div>
-          <div class="socials">
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://twitter.com/"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a
-              href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp"
-              ><i class="fa-brands fa-google"></i
-            ></a>
-          </div>
+          
 
           <form class="form-class" id="formClass" action="">
             <input
               type="text"
               name="text"
               id="username"
-              placeholder="enter your username"
+              placeholder="Enter your username..."
             />
+            <span class="error-text" id="error_username"></span>
             <input
-              type="text"
-              name="password"
-              id="password "
-              placeholder="enter your username"
+              type="email"
+              name="text"
+              id="email"
+              placeholder="Enter your email..."
             />
+            <span class="error-text" id="error_email"></span>
+            <div class="show-hide-password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password..."
+              />
+              <i class="fa-solid fa-eye show-password" id="showPassword"></i>
+            </div>
+            <span class="error-text" id="error_password"></span>
+            <div class="show-hide-password">
+              <input
+                type="password"
+                name="password"
+                id="pass2"
+                placeholder="Re-nter your password..."
+              />
+              <i class="fa-solid fa-eye show-password" id="showPassword2"></i>
+            </div>
+            <span class="error-text" id="error_pass2"></span>
             
-            <input type="checkbox" name="check" id="checkbox" /><span>I agree terms and conditions</span>
+            <div class="wrap-input">
+              <input type="checkbox" name="check" id="checkbox" /><span class="span-text">I agree terms and conditions</span>
+            </div>
+            <span class="error-text" id="error_agree"></span>
+
+            <div class="socials">
+              <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook-f fb"></i
+                ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter tw"></i
+              ></a>
+              <a
+                href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp"
+                ><i class="fa-brands fa-google gl"></i
+              ></a>
+            </div>
+
+            <button type="submit" class="btn-sb" id="submit-btn">Log In</button>
           </form>
-          <button type="submit" class="btn-sb">Log In</button>
+          
           
         </div>
       </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="registration.js"></script>
   </body>
 </html>

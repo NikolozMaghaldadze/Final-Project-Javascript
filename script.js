@@ -57,9 +57,3 @@ let body = document.querySelector('body'),
         });
 
 
-    // registration form start
-
-
-
-    // registration form end
-

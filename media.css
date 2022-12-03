@@ -538,3 +538,55 @@ body.dark .button-2{
     }
 }
 /* end of section 3 responsive */
+
+
+/* registration form */
+
+@media(max-width:490px){
+    .from-wrapper {
+        max-width: 310px;
+        width: 100%;
+        margin: 0 auto;
+        height: 650px;
+      }
+
+      .two-items {
+        width: 300px;
+    }
+    #username {
+        max-width: 250px;
+        width: 100%;
+      }
+
+      #email{
+        max-width: 250px;
+        width: 100%;
+    }
+
+      #password {
+        max-width: 230px;
+        width: 100%;
+      }
+      #pass2 {
+        max-width: 230px;
+        width: 100%;
+      }
+
+      .show-hide-password{
+        margin: 0 auto;
+        padding: 0;
+      }
+      .socials {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+
+
+}
+
+
+/* registration form */
