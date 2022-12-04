@@ -43,6 +43,10 @@ formRegistration.addEventListener("submit", function (event) {
     }
   }
 
+  if (Object.keys(errors).length == 0) {
+    formRegistration.submit();
+  }
+
 });
 
 let validEmail = document.getElementById("email");
@@ -91,4 +95,9 @@ validEmail.addEventListener("keyup", function () {
         toggleIcon2.classList.add("fa-eye");
         toggleIcon2.classList.remove("fa-eye-slash");
     }
-  })
+  });
+
+  // checkbox
+
+
+  
