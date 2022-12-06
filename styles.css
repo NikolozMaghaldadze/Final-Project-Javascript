@@ -1362,3 +1362,156 @@ border-radius: 30px;
       transform: translateY(0px);
   }
 }
+
+/* bottom section */
+
+.bottom-info-wrapper{
+  width: 100%;
+  height:auto;
+  padding-left:  260px;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFF;
+  flex-wrap: wrap;
+}
+
+body.dark .bottom-info-wrapper{
+  background-color: #242526;
+}
+
+body.changes .bottom-info-wrapper{
+  padding-left: 120px;
+}
+
+.tags-wrap{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.tag-infos{
+  border: solid 1px #000;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.tag-infos:hover{
+  background-color: #4cbcfd;
+  cursor: pointer;
+  transition: var(--tran-03);
+}
+
+body.dark .tag-infos{
+  color: #FFF;
+  border: solid 1px #FFF;
+  transition: var(--tran-03);
+}
+
+.bottom-middle-content-header{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+body.dark .bottom-middle-content-header{
+  color: #FFF;
+  transition: var(--tran-03)
+}
+
+.ubralod-paragrafi{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-top: 30px;
+}
+
+body.dark .ubralod-paragrafi{
+  color: #FFF;
+  transition: var(--tran-03);
+}
+
+.ubralod-paragrafi-2{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-top: 10px;
+}
+
+.ubralod-paragrafi-2 a{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-top: 10px;
+}
+.ubralod-paragrafi-2 a:hover{
+  color: #00a2ff;
+  transition: var(--tran-03);
+}
+
+body.dark .ubralod-paragrafi-2 a:hover{
+  color: #00a2ff;
+  transition: var(--tran-03);
+}
+
+.ubralod-paragrafi-2 i{
+  color: #00a2ff;
+  margin-right: 20px;
+}
+
+body.dark .ubralod-paragrafi-2{
+  color: #FFF;
+  transition: var(--tran-03);
+}
+body.dark .ubralod-paragrafi-2 a{
+  color: #FFF;
+  transition: var(--tran-03);
+}
+
+.social-media-wrapper{
+  font-size: 30px;
+  margin-top: 30px;
+  color: #00a2ff;
+  display:flex ;
+  justify-content: flex-start;
+  gap: 30px;
+  
+}
+
+.social-media-wrapper i{
+  cursor: pointer;
+}
+/* bottom section end */
+
+/* footer */
+.footer{
+  width: 100%;
+  height: 150px;
+  display:flex;
+  justify-content:center ;
+  align-items: center;
+  text-align: center;
+  padding-bottom:5px ;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background-color: #FFF;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+body.dark .footer{
+  color: #FFF;
+  background-color: #242526;
+}
+/* footer */
