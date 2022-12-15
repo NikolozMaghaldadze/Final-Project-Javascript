@@ -337,7 +337,7 @@ body.dark .switch::before {
 /* start of first section */
 
 .section1 {
-  background-image: url(images/girl-resting-after-exercises-gym_152625-820_auto_x2_auto_x2.png);
+  background-image: url(../images/girl-resting-after-exercises-gym_152625-820_auto_x2_auto_x2.png);
   object-fit: cover;
   background-repeat: no-repeat;
   background-color: #000;
@@ -347,7 +347,7 @@ body.dark .switch::before {
 }
 
 body.dark .section1 {
-  background-image: url(images/GymGirlDark.jpg);
+  background-image: url(../images/GymGirlDark.jpg);
   object-fit: cover;
   background-repeat: no-repeat;
   background-color: #000;
@@ -777,7 +777,7 @@ body.dark .grid-block .image-1 {
 .registracia-full {
   width: 100%;
   height: 100vh;
-  background-image: url(images/mountains.png);
+  background-image: url(../images/mountains.png);
   object-fit: cover;
 }
 .fixe-message{
@@ -1106,7 +1106,7 @@ body.dark .slider-main-header {
 
 /* users */
 .header-users{
-  background-image: url(images/pexels.jpg);
+  background-image: url(../images/pexels.jpg);
   width: 100%;
   height: 100vh;
   padding: 50px;
