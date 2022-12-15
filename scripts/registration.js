@@ -1,3 +1,6 @@
+"use strict"
+
+
 let formRegistration = document.getElementById("formClass");
 
 formRegistration.addEventListener("submit", function (event) {
